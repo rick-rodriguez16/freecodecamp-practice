@@ -27,8 +27,37 @@
                         <li>fireworks</li>
                     </ol>
                     <figure>
-                        <img src="http://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/fireworks.png" />
+                        <img src="http://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/fireworks.png" alt="An emoji image of a firework." />
+                        <figcaption>Dogs <strong>hate</strong> fireworks.</figcaption>
                     </figure>
+            </section>
+            <section>
+                <h2>Dog Form</h2>
+                <!-- the form's action attribute indicates where for data should be sent -->
+                <form action="https://freecatphotoapp.com/submit-cat-photo">
+                    
+                    <!-- by adding the same name value for each radio button, it
+                          forces the user to only choose one-->
+                    <fieldset>
+                        <legend>Is your dog an indoor or outdoor dog?</legend>
+                        <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" /> Indoor</label>
+                        <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor" /> Outdoor</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>What's your dog's personality?</legend>
+                    </fieldset>
+                    <!-- the input tag allows a user to input in different ways -->
+                    <!-- In order for a form's data to be accessed by the location 
+                          specified in the action attribute, you must give the input
+                          tag a "name" attribute and assign it a valuee to represent
+                          the data being submitted -->
+                    <!-- Placeholder text is used to give people a hint about what
+                          kind of info to enter in an input field -->
+                    <!-- Add "required" to the input tag to prevent a user from submitting
+                          a form when required info is missing-->
+                    <input type="text" name="dogphotourl" placeholder="dog photo URL" required/>
+                    <button type="submit">Submit</button>
+                </form>
             </section>
         </main>
     </body>
