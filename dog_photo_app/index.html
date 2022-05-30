@@ -1,4 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DogPhotoApp</title>
+    </head>
     <body>
         <h1>Dog Photo App</h1>
         <main>
@@ -22,9 +26,9 @@
                     </figure>
                     <h3>Top 3 things dogs hate:</h3>
                     <ol>
-                        <li>medicine</li>
-                        <li>thunder</li>
                         <li>fireworks</li>
+                        <li>thunder</li>
+                        <li>medicine</li>
                     </ol>
                     <figure>
                         <img src="http://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/fireworks.png" alt="An emoji image of a firework." />
@@ -36,17 +40,25 @@
                 <!-- the form's action attribute indicates where for data should be sent -->
                 <form action="https://freecatphotoapp.com/submit-cat-photo">
                     
-                    <!-- by adding the same name value for each radio button, it
+                    <!-- By adding the same "name" value for each radio button
                           forces the user to only choose one-->
                     <fieldset>
                         <legend>Is your dog an indoor or outdoor dog?</legend>
-                        <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" /> Indoor</label>
+                        <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked/> Indoor</label>
                         <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor" /> Outdoor</label>
                     </fieldset>
                     <fieldset>
                         <legend>What's your dog's personality?</legend>
+                        
+                    <!-- Adding a "for" attribute to the label tag and giving it the
+                          same value as the input "id" associates the two tags just like
+                          the "name" attribute -->
+                        <input id="loving" type="checkbox" name="personality" value="loving" checked/> <label for="loving">Loving</label>
+                        <input id="lazy" type="checkbox" name="personality" value="lazy" /> <label for="lazy">Lazy</label>
+                        <input id="energetic" type="checkbox" name="personality" value="energetic" /> <label for="energetic">Energetic</label>
                     </fieldset>
-                    <!-- the input tag allows a user to input in different ways -->
+
+                    <!-- The input tag allows a user to input in different ways -->
                     <!-- In order for a form's data to be accessed by the location 
                           specified in the action attribute, you must give the input
                           tag a "name" attribute and assign it a valuee to represent
@@ -60,5 +72,8 @@
                 </form>
             </section>
         </main>
+        <footer>
+            <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+        </footer>
     </body>
 </html>
