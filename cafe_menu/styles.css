@@ -14,6 +14,8 @@ hr {
 
 h1 {
     font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 h2 {
@@ -32,6 +34,13 @@ h1, h2, p {
     font-style: italic;
 }
 
+img {
+    display: block;
+    margin-top: -25px;;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .menu {
     margin-left: auto;
     margin-right: auto;
@@ -44,6 +53,9 @@ h1, h2, p {
 
 .item p {
     display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
 }
 
 .flavor, .dessert {
@@ -54,4 +66,34 @@ h1, h2, p {
 .price {
     text-align: right;
     width: 25%;
+}
+
+.bottom-line {
+    margin-top: 25px;
+}
+
+/* FOOTER */
+
+footer {
+    font-size: 14px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+footer a {
+    color: black;
+}
+
+footer a:visited {
+    color: black;
+}
+
+footer a:hover {
+    color: saddlebrown;
+}
+
+footer a:active {
+    color: saddlebrown;
 }
