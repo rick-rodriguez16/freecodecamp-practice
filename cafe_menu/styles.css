@@ -1,9 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Permanent+Marker&display=swap');
+
 body {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+hr {
+    height: 2px;
+    background-color: saddlebrown;
+    border-color: saddlebrown;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, p {
     text-align: center;
+}
+
+.established {
+    font-style: italic;
 }
 
 .menu {
@@ -11,13 +37,16 @@ h1, h2, p {
     margin-right: auto;
     background-color: burlywood;
     width: 80%;
+    max-width: 500px;
+    padding: 20px;
+
 }
 
 .item p {
     display: inline-block;
 }
 
-.flavor {
+.flavor, .dessert {
     text-align: left;
     width: 75%;
 }
