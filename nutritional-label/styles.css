@@ -10,8 +10,11 @@ body {
     font-family: Open Sans, sans-serif;
 }
 
-h1 {
+.bold {
     font-weight: 800;
+}
+
+header h1 {
     text-align: center;
     margin: -4px 0;
     letter-spacing: 0.15px;
@@ -31,4 +34,22 @@ p {
 .divider {
     margin: 2px 0;
     border-bottom: 1px solid #888989;
+}
+
+.right {
+    float: right;
+}
+
+.lg {
+    height: 10px;
+}
+
+.lg,
+.md {
+    background-color: black;
+    border: 0;
+}
+
+.sm-text {
+    font-size: 0.85rem;
 }
