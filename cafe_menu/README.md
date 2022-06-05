@@ -1,1 +1,1 @@
-View the app live at: https://rick-rodriguez16.github.io/freecodecamp-projects/cafe_menu/
+View the app live at: https://rick-rodriguez16.github.io/freecodecamp-practice/cafe_menu/
