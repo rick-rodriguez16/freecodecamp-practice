@@ -68,3 +68,11 @@ p {
     font-size: 1.2em;
     margin-top: -7px;
 }
+
+.indent {
+    margin-left: 1em;
+}
+
+.daily-value p:not(.no-divider) {
+    border-bottom: 1px solid #888989;
+}
