@@ -22,21 +22,63 @@
     </header>
     <main>
         <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
-            <section role="region" aria-labelledby="student-info"><h2 id="student-info">Student Info</h2></section>
-            <div class="info">
-                <label for="name">Name: </label>
-                <input id="name" type="text" name="name" />
-            </div>
-            <div class="info">
-                <label for="email">Email: </label>
-                <input id="email" type="email" name="email" placeholder="Your email"/>
-            </div>
-            <div class="info">
-                <label for="date-of-birth">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
-                <input id="date-of-birth" type="date" name="date-of-birth" />
-            </div>
-            <section role="region" aria-labelledby="html-questions"><h2 id="html-questions">HTML Questions</h2></section>
-            <section role="region" aria-labelledby="css-questions"><h2 id="css-questions">CSS Questions</h2></section>
+            <section role="region" aria-labelledby="student-info"> 
+                <h2 id="student-info">Student Info</h2>
+                <div class="info">
+                    <label for="name">Name: </label>
+                    <input id="name" type="text" name="name" />
+                </div>
+                <div class="info">
+                    <label for="email">Email: </label>
+                    <input id="email" type="email" name="email" placeholder="Your email"/>
+                </div>
+                <div class="info">
+                    <label for="date-of-birth">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
+                    <input id="date-of-birth" type="date" name="date-of-birth" />
+                </div>
+            </section>
+            <section role="region" aria-labelledby="html-questions">
+                <h2 id="html-questions">HTML Questions</h2>
+                <div class="question-block">
+                    <p>1</p>
+                    <fieldset class="question" name="html-question-one">
+                        <legend>True or False: HTML is a markup language.</legend>
+                        <ul class="answers-list">
+                            <li>
+                                <label for="html-q1a1">
+                                    <input type="radio" id="html-q1a1" value="true" /> True
+                                </label>
+                            </li>
+                            <li>
+                                <label for="html-q1a2">
+                                    <input type="radio" id="html-q1a2" value="false" /> False
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="question-block">
+                    <p>2</p>
+                    <fieldset class="question" name="html-question-two">
+                        <legend>True or False: Semantic HTML make accessibility easier.</legend>
+                        <ul class="answers-list">
+                            <li>
+                                <label for="html-q2a1">
+                                    <input type="radio" id="html-q2a1" value="true" /> True
+                                </label>
+                            </li>
+                            <li>
+                                <label for="html-q2a2">
+                                    <input type="radio" id="html-q2a2" value="false" /> False
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </section>
+            <section role="region" aria-labelledby="css-questions">
+                <h2 id="css-questions">CSS Questions</h2>
+            </section>
         </form>
     </main>
 </body>
