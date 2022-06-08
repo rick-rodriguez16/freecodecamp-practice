@@ -79,10 +79,22 @@
             <section role="region" aria-labelledby="css-questions">
                 <h2 id="css-questions">CSS Questions</h2>
                 <div class="formrow">
-                    <div class="question-block"></div>
-                    <div class="answer"></div>
-                    <div class="question-block"></div>
-                    <div class="answer"></div>
+                    <div class="question-block">
+                        <label for="em-vs-rem">What does em stand for?</label>
+                    </div>
+                    <div class="answer">
+                        <select id="em-vs-rem" name="em-vs-rem" required>
+                            <option value="">(select one)</option>
+                            <option value="element">Relative to the font-size of the element</option>
+                            <option value="root-element">Relative to font-size of the root element</option>
+                        </select>
+                    </div>
+                    <div class="question-block">
+                        <label for="rem-meaning">What does rem stand for?</label>
+                    </div>
+                    <div class="answer">
+                        <textarea id="rem-meaning" name="rem-meaning"rows="3" cols="30" placeholder="rem stands for..."></textarea>
+                    </div>
                 </div>
             </section>
         </form>
