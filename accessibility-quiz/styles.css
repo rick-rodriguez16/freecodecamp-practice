@@ -1,3 +1,9 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
 body {
 	background: #f5f6f7;
 	color: #1b1b32;
@@ -161,4 +167,20 @@ button {
     font-size: 23px;
     background: #d0d0d5;
     border: 3px solid #3b3b4f;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #2a2a40;
+}
+
+footer,
+footer a {
+    color: #ffffff;
+}
+
+address {
+    text-align: center;
+    padding: 0.5rem;
 }
